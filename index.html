@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Station with Linked Charts</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            color: #333;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #d40027;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar .logo img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Main content area */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .promo-banner {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .dashboard-item {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar with logo and links -->
+<aside class="sidebar">
+    <div class="logo">
+        <img src="https://kimweb.agency/wp-content/uploads/2024/11/KimLogo.png" alt="Kim Station Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Attiva Offerte</a></li>
+            <li><a href="#">Ordina Prodotti</a></li>
+            <li><a href="#">Ricarica Plafond</a></li>
+            <li><a href="#">Formazione</a></li>
+            <li><a href="#">Supporto</a></li>
+            <li><a href="#" style="color: #bbbbbb;">Esci</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<!-- Main content area -->
+<main class="main-content">
+    <div class="promo-banner">
+        <p>Le offerte Sky 3p scadono il 7 Novembre! Approfittane!</p>
+        <p>Acquista le SIM nella sezione "Ordina Prodotti".</p>
+    </div>
+    <div class="dashboard-item">
+        <h3>Le tue attività Kim Privati</h3>
+        <p>Seleziona un'attività e prodotto per visualizzare i dati.</p>
+        <img src="/mnt/data/activation_trend_chart.png" alt="Activation Trend Chart" style="width: 100%; margin-top: 10px;">
+    </div>
+    <div class="dashboard-item">
+        <h3>Le tue attività Kim Business</h3>
+        <p>Visualizza le attivazioni mensili business.</p>
+        <img src="/mnt/data/business_activation_chart.png" alt="Business Activation Bar Chart" style="width: 100%; margin-top: 10px;">
+    </div>
+</main>
+
+</body>
+</html>
